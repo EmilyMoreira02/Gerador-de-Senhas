@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Senhas Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-layout">
+        <div class="container">
+            <h1>Sistema senha</h1>
+            
+            <div class="datahora">
+                <h2 id="data">--/--/----</h2>
+                <h2 id="hora">00:00:00</h2>
+            </div>
+
+            <div class="gerar-box">
+                <button id="btnGerar" title="Senha Normal">Normal</button>
+                <button id="btnPreferencial" title="Senha Preferencial">Preferencial</button>
+            </div>
+            
+            <div class="senhaBox" id="boxUltimaSenha">
+                <h2 id="tipoSenha">Senha:</h2>
+                <h1 id="senha">---</h1>
+            </div>
+
+            <div class="guiche">
+                <label>Escolha o Guichê</label>
+                <select id="guiche">
+                    <option value="1">Guichê 01</option>
+                    <option value="2">Guichê 02</option>
+                    <option value="3">Guichê 03</option>
+                </select>
+            </div>
+
+            <button id="btnChamar">Chamar Senha</button>
+            <button id="btnZerar" class="btn-danger">Zerar Filas</button>
+        </div>
+
+        <div class="history-panel">
+            <h3>Histórico</h3>
+            <ul id="listaHistorico"></ul>
+        </div>
+    </div>
+</body>
+</html>
